@@ -47,5 +47,4 @@ def check_reddit(sent_items):
            messages.append(f"🪓 Новий пост на Reddit:\n{submission.title}\n{submission.url}")
 {submission.title}
 message += f"New Reddit post found: {submission.title} - {submission.url}\n"
-
     return messages
