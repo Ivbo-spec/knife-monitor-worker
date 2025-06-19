@@ -44,7 +44,7 @@ def check_reddit(sent_items):
     for submission in subreddit.new(limit=10):
         text = submission.title + " " + submission.selftext
         if keyword_in_text(text) and submission.id not in sent_items:
-            messages.append(f"🪓 Новий пост на Reddit:
+           messages.append(f"🪓 Новий пост на Reddit:\n{submission.title}\n{submission.url}")
 {submission.title}
 {submission.url}")
     return messages
